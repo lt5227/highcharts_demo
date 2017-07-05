@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8"/>
+    <link rel="icon" href="https://static.jianshukeji.com/highcharts/images/favicon.ico"/>
+    <title>HIGHCHARTS DEMO</title>
+    <link rel="stylesheet" th:href="@{public/css/index.css}"/>
+    <script type="text/javascript" th:src="@{public/libs/jquery/jquery-3.1.1.min.js}"></script>
+    <script type="text/javascript" th:src="@{public/libs/easyui/jquery.easyui.min.js}"></script>
+    <script type="text/javascript" th:src="@{public/js/index.js}"></script>
+    <script type="text/javascript" src="https://img.hcharts.cn/highcharts/highcharts.js"></script>
+    <script type="text/javascript" src="https://img.hcharts.cn/highcharts/modules/exporting.js"></script>
+    <script type="text/javascript" src="https://img.hcharts.cn/highcharts-plugins/highcharts-zh_CN.js"></script>
+</head>
+<body>
+<div id="container" style="min-width: 400px;height: 400px"></div>
+<input type="button" value="导出PDF" onclick="exportPDF()"/>
+</body>
+</html>
